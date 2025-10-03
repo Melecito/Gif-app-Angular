@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input, signal } from '@angular/core';
 import { GIFListComponent } from "../../components/gif-list/gif-list.component";
 
 const imageUrls: string[] = [
@@ -26,7 +26,8 @@ const imageUrls: string[] = [
 })
 export default class TrendingPageComponent {
 
+  gifs = signal(imageUrls);
 
 
 
- }
+}
